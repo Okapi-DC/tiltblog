@@ -1,0 +1,60 @@
+$info : black;
+
+
+$primary : #dd8556;
+$secondary : #dd8556;
+
+
+footer{
+  margin-top: 170px!important;
+}
+
+input {
+  border-radius: 10px!important;
+  color:#dd8556!important; ;
+  width: 250px!important;
+}
+
+textarea {
+  border-radius: 10px!important;
+}
+
+button {
+  border-radius: 10px!important;
+  color: white!important;
+}
+
+.fav {
+  border-radius: 10px!important;
+  background-color: #DD8556;
+  padding: 0px 4px;
+
+//  box-shadow: 0px 0px 5px black;
+};
+.fav a {
+  color: white!important;
+}
+
+.fav:hover {
+  color: #d78e67!important;
+}
+
+
+
+.espace {
+  margin-top: 30px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Yusei Magic', sans-serif;
+  color: #DDCD56!important;
+}
+
+h1 {
+  font-size: 35px!important;
+}
+
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
