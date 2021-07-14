@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import UsersRoutes from '@/components/users/routes'
 
 Vue.use(VueRouter)
 
 const routes = [
-
   {
     path: '/',
     name: 'Home',
@@ -13,41 +11,30 @@ const routes = [
       default: () => import(/* webpackChunkName: "home" */ '../views/Home.vue'),
     },
   },
-  // spread/apply
-  ...UsersRoutes,
 
   {
-    path: '/inscription',
-    name: 'Inscription',
+    path: '/articles/Les-soft-skills-by-Tilt',
+    name: 'articles/Les-soft-skills-by-Tilt',
     components: {
-      default: () => import(/* webpackChunkName: "inscription" */ '../views/Inscription.vue'),
+      default: () => import(/* webpackChunkName: "articles/Les-soft-skills-by-Tilt" */ '../views/articles/Les-soft-skills-by-Tilt.vue'),
     },
   },
 
   {
-    path : '/connexion',
-    name : 'Connexion',
+    path: '/articles/Les-5-soft-skills-les-plus-importants',
+    name: 'articles/Les-5-soft-skills-les-plus-importants',
     components: {
-      default: () => import(/* webpackChunkName: "connexion" */ '../views/Connexion.vue'),
+      default: () => import(/* webpackChunkName: "articles/Les-5-soft-skills-les-plus-importants" */ '../views/articles/Les-5-soft-skills-les-plus-importants.vue'),
     },
   },
 
   {
-    path : '/jeu',
-    name : 'jeu',
+    path: '/articles/Soft-Skills-vs-Hard-Skills',
+    name: 'articles/Soft-Skills-vs-Hard-Skills',
     components: {
-      default: () => import(/* webpackChunkName: "Game" */ '../views/Jeu.vue'),
+      default: () => import(/* webpackChunkName: "articles/Soft-Skills-vs-Hard-Skills" */ '../views/articles/Soft-Skills-vs-Hard-Skills.vue'),
     },
   },
-
-  {
-    path : '/contact',
-    name : 'Contact',
-    components: {
-      default: () => import(/* webpackChunkName: "connexion" */ '../views/Contact.vue'),
-    },
-  },
-
 ]
 
 const router = new VueRouter({
